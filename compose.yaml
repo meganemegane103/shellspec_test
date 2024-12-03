@@ -1,0 +1,9 @@
+services:
+  shellspec_container:
+    build: .
+    environment:
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./src/:/working
+    tty: true
+    privileged: true
